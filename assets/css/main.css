@@ -12,16 +12,17 @@
 .navbar__list {
     list-style: none;
     padding-left: 0;
+    margin-top: 4px;
 }
 
 .navbar__item {
     margin: 0 8px;
     position: relative;
+    min-height: 26px;
 }
 
 .navbar__item,
 .navbar__link {
-    display: inline-block;
     font-size: 1.3rem;
     color: var(--white-color);
     text-decoration: none;
@@ -29,9 +30,18 @@
 }
 
 .navbar__item:hover,
-.navbar__link:hover {
+.navbar__link:hover,
+.navbar__icon-link:hover {
     cursor: pointer;
     color: #ffffffbb
+}
+
+.navbar__list,
+.navbar__item,
+.navbar__link,
+.navbar__icon-link {
+    display: inline-flex;
+    align-items: center;
 }
 
 .navbar__item--separate::after {
@@ -48,4 +58,14 @@
 .navbar__icon-link {
     color: var(--white-color);
     text-decoration: none;
+}
+
+.navbar__icon {
+    font-size: 1.6rem;
+    margin: 0 4px;
+}
+
+.navbar__title--no-pointer {
+    cursor: text;
+    color: var(--white-color) !important;
 }
