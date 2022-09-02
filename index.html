@@ -28,7 +28,7 @@
                 <nav class="navbar">
                     <ul class="navbar__list">
                         <li class="navbar__item navbar__item--show-qr navbar__item--separate">
-                            Vào cửa hàng trên ứng dụng F8-Shop
+                            Vào cửa hàng trên ứng dụng Shopee
 
                             <!-- Header QR Code-->
                             <div class="qr">
@@ -146,7 +146,44 @@
                         </svg>
                     </div>
 
-                    <div class="header__search"></div>
+                    <!-- Begin: Search Bar -->
+                    <div class="search">
+                        <div class="search__input-wrap">
+                            <input type="text" class="search__input" placeholder="Nhập để tìm kiếm sản phẩm">
+                            
+                            <!-- Begin: Search history  -->
+                            <div class="search__history">
+                                <h3 class="search__history-heading">Lịch sử tìm kiếm</h3>
+                                <ul class="search__history-list">
+                                    <li class="search__history-item">
+                                        <a href="#">Áo khác MBC</a>
+                                    </li>
+                                    <li class="search__history-item">
+                                        <a href="#">Quần tây thanh lịch</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- End: Search history  -->
+                        </div>
+                        <div class="search__select">
+                            <span class="search__select-label">Trong shop này</span>
+                            <i class="search__select-icon fa-solid fa-angle-down"></i>
+                            <ul class="search__option">
+                                <li class="search__option-item search__option-item--active">
+                                    <span>Trong shop này</span>
+                                    <i class="fa-solid fa-check"></i>
+                                </li>
+                                <li class="search__option-item">
+                                    <span>Trong Shopee</span>
+                                    <i class="fa-solid fa-check"></i>
+                                </li>
+                            </ul>
+                        </div>
+                        <button class="search__btn">
+                            <i class="search__btn-icon fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </div>
+                    <!-- End: Search Bar -->
 
                     <div class="header__cart">
                         <i class="header__cart-icon fa-solid fa-cart-shopping"></i>
