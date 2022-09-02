@@ -150,7 +150,7 @@
                     <div class="search">
                         <div class="search__input-wrap">
                             <input type="text" class="search__input" placeholder="Nhập để tìm kiếm sản phẩm">
-                            
+
                             <!-- Begin: Search history  -->
                             <div class="search__history">
                                 <h3 class="search__history-heading">Lịch sử tìm kiếm</h3>
@@ -165,6 +165,8 @@
                             </div>
                             <!-- End: Search history  -->
                         </div>
+
+                        <!-- Begin: Search Select -->
                         <div class="search__select">
                             <span class="search__select-label">Trong shop này</span>
                             <i class="search__select-icon fa-solid fa-angle-down"></i>
@@ -179,15 +181,27 @@
                                 </li>
                             </ul>
                         </div>
+                        <!-- End: Search Select -->
+
                         <button class="search__btn">
                             <i class="search__btn-icon fa-solid fa-magnifying-glass"></i>
                         </button>
                     </div>
                     <!-- End: Search Bar -->
 
+                    <!-- Begin: Cart Layout -->
                     <div class="header__cart">
-                        <i class="header__cart-icon fa-solid fa-cart-shopping"></i>
+                        <div class="header__cart-wrap">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <div class="header__cart-list header__cart-list--no-cart">
+                                <div class="header__no-cart">
+                                    <img src="./assets/img/no_cart.png" alt="No cart" class="header__no-cart-img">
+                                    <span class="header__no-cart-msg">Giỏ hàng của bạn còn trống</span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
+                    <!-- End: Cart Layout -->
                 </div>
                 <!-- End: Header bottom -->
             </div>
