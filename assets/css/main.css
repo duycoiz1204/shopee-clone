@@ -310,7 +310,7 @@
 .auth-form__controls {
     margin-top: 80px;
     display: flex;
-    justify-content: right;
+    justify-content: flex-end;
 }
 
 .auth-form__control-back {
@@ -346,4 +346,28 @@
 .connect__social-text {
     flex-grow: 1;
     text-align: center;
+}
+
+.auth-form__help {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.auth-form__help-link {
+    font-size: 1.4rem;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: #939393;
+}
+
+.auth-form__help-separate {
+    display: block;
+    height: 22px;
+    margin: 0 16px;
+    border-left: 1px solid #eaeaea;
+}
+
+.auth-form__help-link--forgot {
+    color: var(--primary-color);
 }
