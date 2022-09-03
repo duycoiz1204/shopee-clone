@@ -111,7 +111,7 @@ html {
     cursor: pointer;
     color: var(--text-color);
     background-color: var(--white-color);
-    display: flex;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
 }
