@@ -60,6 +60,14 @@ html {
     width: 20%;
 }
 
+.mt-48 {
+    margin-top: 48px;
+}
+
+.mb-32 {
+    margin-bottom: 32px;
+}
+
 /* Animation */
 @keyframes fadeIn {
     from {
