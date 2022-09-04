@@ -989,6 +989,7 @@
 .product-list-item {
     background-color: var(--white-color);
     margin-top: 10px;
+    position: relative;
 }
 
 .product-list-item__img {
@@ -1083,16 +1084,26 @@
     margin-top: 8px;
 }
 
-.product-list-item__brand {
-
-}
-
-.product-list-item__origin-name {
-
-}
-
 .product-list-item__fav {
+    position: absolute;
+    top: 10px;
+    left: -4px;
+    color: var(--white-color);
+    background-color: var(--secondary-color);
+    font-size: 1.2rem;
+    padding: 0 4px;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
 
+.product-list-item__fav::after {
+    content: "";
+    border-top: 3px solid var(--secondary-color);
+    border-left: 3px solid transparent;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    filter: brightness(60%);
 }
 
 .product-list-item__sale-off {
