@@ -980,3 +980,129 @@
     font-size: 1.4rem;
     color: #555;
 }
+
+/* Product list */
+.product-list {
+
+}
+
+.product-list-item {
+    background-color: var(--white-color);
+    margin-top: 10px;
+}
+
+.product-list-item__img {
+    padding-top: 100%;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.product-list-item__wrap {
+    padding: 8px;
+}
+
+.product-list-item__name {
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: var(--text-color);
+    margin: 0;
+    line-height: 1.8rem;
+    height: 3.6rem;
+    overflow: hidden;
+    display: block;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+
+.product-list-item__price {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 8px;
+}
+
+.product-list-item__price-old {
+    font-size: 1.4rem;
+    color: #666;
+    text-decoration: line-through;
+}
+
+.product-list-item__price-current {
+    font-size: 1.6rem;
+    color: var(--primary-color);
+    margin-left: 6px;
+}
+
+.product-list-item__action {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 16px;
+}
+
+.product-list-item__like {
+    font-size: 1.2rem;
+}
+
+.product-list-item__like--liked .product-list-item__like-icon-empty {
+    display: none;
+}
+
+.product-list-item__like--liked .product-list-item__like-icon-fill {
+    display: block;
+}
+
+.product-list-item__like-icon-fill {
+    color: #f63d30;
+    display: none;
+}
+
+.product-list-item__rating {
+    font-size: 0.8rem;
+    color: #d5d5d5;
+    margin-left: auto;
+}
+
+.product-list-item__rating-gold {
+    color: var(--star-gold-color);
+}
+
+.product-list-item__sold {
+    font-size: 1.2rem;
+    color: var(--text-color);
+    margin-left: 4px;
+}
+
+.product-list-item__origin {
+    display: flex;
+    justify-content: space-between;
+    color: #595959;
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin-top: 8px;
+}
+
+.product-list-item__brand {
+
+}
+
+.product-list-item__origin-name {
+
+}
+
+.product-list-item__fav {
+
+}
+
+.product-list-item__sale-off {
+
+}
+
+.product-list-item__sale-off-percent {
+
+}
+
+.product-list-item__sale-off-label {
+
+}
