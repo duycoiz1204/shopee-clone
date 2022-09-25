@@ -154,9 +154,15 @@
 
                 <!-- Begin:  Header bottom -->
                 <div class="header__bottom">
-                    <label for="mobile-search-checkbox" class="header__mobile-search">
-                        <i class="header__mobile-search-icon fa-solid fa-magnifying-glass"></i>
-                    </label>
+                    <div class="header__mobile-control">
+                        <label for="mobile-sidebar-checkbox" class="header__mobile-item">
+                            <i class="header__mobile-item-icon fa-solid fa-bars"></i>
+                        </label>
+
+                        <label for="mobile-search-checkbox" class="header__mobile-item">
+                            <i class="header__mobile-item-icon fa-solid fa-magnifying-glass"></i>
+                        </label>
+                    </div>
 
                     <div class="header__logo hide-on-tablet">
                         <a href="/" class="header__logo-link">
@@ -427,6 +433,20 @@
         </header>
         <!-- End: Header -->
 
+        <input type="checkbox" id="mobile-sidebar-checkbox" class="header__sidebar-checkbox" hidden>
+
+        <div class="mobile-sidebar">
+            <label for="mobile-sidebar-checkbox" class="mobile-sidebar__close">
+                <i class="mobile-sidebar__close-icon fa-solid fa-xmark"></i>
+            </label>
+            <ul class="mobile-sidebar__list">
+                <li class="mobile-sidebar__item"><a href="" class="mobile-sidebar__link">Link 1</a></li>
+                <li class="mobile-sidebar__item"><a href="" class="mobile-sidebar__link">Link 2</a></li>
+                <li class="mobile-sidebar__item"><a href="" class="mobile-sidebar__link">Link 3</a></li>
+                <li class="mobile-sidebar__item"><a href="" class="mobile-sidebar__link">Link 4</a></li>
+            </ul>
+        </div>
+
         <div class="app__container">
             <div class="grid wide">
                 <div class="row sm-gutter app__content">
@@ -497,7 +517,7 @@
                         <nav class="mobile-category">
                             <ul class="mobile-category__list">
                                 <li class="mobile-category__item">
-                                    <a href="" class="mobile-category__link">Thiết bị tiện ích</a>
+                                    <a href="" class="mobile-category__link">Thiết bị tiện ích Thiết bị tiện ích Thiết bị tiện ích</a>
                                 </li>
                                 <li class="mobile-category__item">
                                     <a href="" class="mobile-category__link">Thiết bị tiện ích</a>

@@ -1,5 +1,6 @@
 .app {
     overflow: hidden;
+    position: relative;
 }
 
 .header {
@@ -456,12 +457,16 @@
     margin: 0 8px;
 }
 
-.header__mobile-search {
+.header__mobile-control {
+    display: flex;
+}
+
+.header__mobile-item {
     padding: 8px;
     display: none;
 }
 
-.header__mobile-search-icon {
+.header__mobile-item-icon {
     font-size: 2.6rem;
     color: var(--white-color);
 }
@@ -924,6 +929,53 @@
     display: none;
 }
 
+.mobile-sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: all linear .2s;
+    background-color: var(--white-color);
+}
+
+.header__sidebar-checkbox:checked ~ .mobile-sidebar {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.mobile-sidebar__close {
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+.mobile-sidebar__close-icon {
+    font-size: 3rem;
+    line-height: unset;
+    padding: 16px;
+}
+
+.mobile-sidebar__list {
+    padding-left: 0;
+    list-style: none;
+    margin: 0;
+    width: 300px;
+    padding-top: 16px;
+}
+
+.mobile-sidebar__item {
+    padding: 16px 32px;
+}
+
+.mobile-sidebar__link {
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 2rem;
+}
+
 /* App container */
 .app__container {
     background-color: #f5f5f5;
@@ -1011,37 +1063,39 @@
 }
 
 .mobile-category__item {
+    --line-height: 2rem;
     flex-shrink: 0;
     margin-right: 10px;
+    line-height: var(--line-height);
+    height: calc(var(--line-height) * 2);
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
 }
 
-.mobile-category__item:nth-of-type(3n + 1) .mobile-category__link {
+.mobile-category__item:nth-of-type(3n + 1) {
     background-color: #87afd8;
 }
 
-.mobile-category__item:nth-of-type(3n + 2) .mobile-category__link {
+.mobile-category__item:nth-of-type(3n + 2) {
     background-color: #76c9bd;
 }
 
-.mobile-category__item:nth-of-type(3n + 3) .mobile-category__link {
+.mobile-category__item:nth-of-type(3n + 3) {
     background-color: #88cf81;
 }
 
 .mobile-category__link {
-    --line-height: 2rem;
     text-decoration: none;
     color: var(--white-color);
     font-size: 1.4rem;
-    line-height: var(--line-height);
-    height: calc(var(--line-height) * 2);
-    overflow: hidden;
     text-align: center;
     width: 110px;
+    overflow: hidden;
     display: block;
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 2;
-    border-radius: 4px;
     font-weight: 300;
     user-select: none;
     -webkit-user-select: none;

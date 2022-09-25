@@ -1,9 +1,5 @@
 /* Mobile & tablet */
 @media (max-width: 1023px) {
-    :root {
-        --header-height: 68px;
-        --navbar-height: 0px;
-    }
 
     .hide-on-mobile-tablet {
         display: none;
@@ -47,6 +43,11 @@
 
 /* Tablet */
 @media (min-width: 740px) and (max-width: 1023px) {
+    :root {
+        --header-height: 68px;
+        --navbar-height: 0px;
+    }
+
     .hide-on-tablet {
         display: none;
     }
@@ -59,6 +60,11 @@
 
 /* Mobile */
 @media (max-width: 739px) {
+    :root {
+        --header-height: 54px;
+        --navbar-height: 0px;
+    }
+
     .hide-on-mobile {
         display: none;
     }
@@ -119,12 +125,20 @@
         font-size: 1.6rem;
     }
 
-    .header__mobile-search {
+    .header__mobile-item {
         display: block;
     }
 
     .header__logo-img {
         width: 140px;
+    }
+
+    .search__select-label {
+        display: none;
+    }
+
+    .search__option {
+        width: calc(100% + 90px);
     }
 
     .footer__info {
