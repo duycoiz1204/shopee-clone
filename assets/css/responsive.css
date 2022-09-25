@@ -126,4 +126,13 @@
     .header__logo-img {
         width: 140px;
     }
+
+    .footer__info {
+        text-align: center;
+        margin-top: 8px;
+    }
+
+    .footer__download {
+        justify-content: center;
+    }
 }
