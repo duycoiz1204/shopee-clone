@@ -35,6 +35,14 @@
     .sort-bar {
         display: flex;
     }
+
+    .app__content {
+        padding-top: 8px;
+    }
+
+    .mobile-category {
+        display: block;
+    }
 }
 
 /* Tablet */
@@ -80,6 +88,16 @@
         display: none;
     }
 
+    @keyframes mobileSearchSideIn {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
     .search__history {
         position: fixed;
         top: calc(var(--header-height) + var(--header-sort-bar-height));
@@ -101,13 +119,11 @@
         font-size: 1.6rem;
     }
 
-    @keyframes mobileSearchSideIn {
-        from {
-            opacity: 0;
-        }
+    .header__mobile-search {
+        display: block;
+    }
 
-        to {
-            opacity: 1;
-        }
+    .header__logo-img {
+        width: 140px;
     }
 }
