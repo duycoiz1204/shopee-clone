@@ -87,10 +87,25 @@
         box-shadow: 0 1px 2px rgb(0 0 0 / 5%);
     }
 
+    .app__content {
+        margin: 0 2px;
+    }
+
+    .pagination-item {
+        margin: 0;
+    }
+
+    .pagination-item__link {
+        min-width: 36px;
+        height: 28px;
+        font-size: 1.6rem;
+    }
+
     @keyframes mobileSearchSideIn {
         from {
             opacity: 0;
         }
+
         to {
             opacity: 1;
         }
